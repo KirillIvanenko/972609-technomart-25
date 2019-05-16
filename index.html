@@ -7,17 +7,27 @@
 <body>
   <header class="main-header">
   <!--Логотип-->
-    <nav class="main-navigation">
       <a class="top-header-logo">
-      <img src="img/index-logo.svg" width="100" height="100" alt="Логотип Техномарт">
+        <img src="img/index-logo.svg" width="100" height="100" alt="Логотип Техномарт">
       </a>
+  <!--Поиск-->
+    <form action="" method="get">
+     <button type="submit"></button>
+     <input placeholder="Поиск:" type="search">
+    </form>
   <!--Закладки, Корзина и Оформление заказа-->
-    <span><a href="bookmarks.html">Закладки</a></span>
-    <span><a href="basket.html">Корзина</a></span>
-    <span><a href="order.html">Оформление заказа</a></span>
+    <a href="bookmarks.html">Закладки:<span>0</span></a>
+    <a href="basket.html">Корзина:<span>0</span></a>
+    <a href="order.html">Оформление заказа</a>
   <!--Телефон и адрес-->
-    <span>+7 (812) 555-05-55<br> г.Санкт-Петербург, ул. Б.Конюшенная д.19/8</span>
+    <p><a href="tel:>+78125550555">+7(812) 555-05-55</a></p><p>г.Санкт-Петербург, ул. Б.Конюшенная д.19/8</p>
+  <!--Регистрация и вход-->
+     <ul class="user-navigation">
+       <li> <a href="login-link">Вход:</a></li>
+       <li> <a href="registration-link">Регистрация:</a></li>
+     </ul>
   <!--Меню навигации по сайту-->
+  <nav class="main-navigation">
     <ul class="top-site-navigation">
       <li><a href="index.html">Главная</a></li>
       <li><a href="info.html">Компания</a></li>
@@ -27,26 +37,152 @@
       <li><a href="delivery.html">Доставка</a></li>
       <li><a href="contacts.html">Контакты</a></li>
      </ul>
-  <!--Регистрация и вход-->
-     <ul class="user-navigation">
-       <li class="login-link">Вход</li>
-       <li class="registration-link">Регистрация</li>
-     </ul>
-    </nav>
-  <!--Поиск-->
-    <form action="" method="get">
-     <button type="submit"></button>
-     <input placeholder="Поиск" type="search">
-    </form>
-
+   </nav>
    </header>
-   <main>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-  </main>
+      <main class="supermarket-main">
+        <h1>Интернет магазин строительных материалов и инструментов для ремонта</h1>
+  <!--Товары и усылуги-->
+     <span class="materials">Материалы<a class="botton" href="materials.html">На любой вкус</a></span>
+     <span class="tools">Инструменты<a class="botton" href="tools.html">На все случаи</a></span>
+     <span class="equipment">Техника<a class="botton" href="equipment.html">Для стройки</a></span>
+     <span class="sale">Скидки 50%<a class="botton" href="sale.html">На 350 товаров</a></span>
+     <span class="delivery">Доставка<a class="botton" href="delivery.html">Бесплатно</a></span>
+  <!--Здесь будет слайдер-->
+  <!--Популярные товары-->
+    <section class="popular-goods">
+      <h2>Популярные товары</h2>
+        <a href="popular-goods.html">Все популярные товары</a>
+          <ul class="popular-goods-list">
+            <li class="popular-goods-item">
+              <h3>Перфоратор</h3>
+              <p><img src="#" alt="Популярный товар"></p>
+              <span class="popular-good-name">BFG 9000</span>
+              <span class="popular-old-price">32500 Р.</span>
+              <span class="popular-new-price">25500 Р.</span>
+            </li>
+              <h3>Перфоратор</h3>
+              <p><img src="#" alt="Популярный товар"></p>
+              <span class="popular-good-name">BFG 3000</span>
+              <span class="popular-old-price">22500 Р.</span>
+              <span class="popular-new-price">15500 Р.</span>
+            </li>
+            <h3>Перфоратор</h3>
+              <p><img src="#" alt="Популярный товар"></p>
+              <span class="popular-good-name">BFG 6000</span>
+              <span class="popular-old-price">30500 Р.</span>
+              <span class="popular-new-price">25500 Р.</span>
+            </li>
+            <h3>Перфоратор</h3>
+            <figure>
+              <p><img src="#" alt="Популярный товар"></p>
+              <figcaption>New</figcaption>
+            </figure>
+              <span class="popular-good-name">BFG 2000</span>
+              <span class="popular-old-price">22500 Р.</span>
+            </li>
+      </section>
+  <!--Популярные производители-->
+      <section class="popular-brands">
+        <h2>Популярные производители</h2>
+          <a href="popular-brands.html">Все популярные производители</a>
+            <ul class="popular-brands-list">
+              <li class="popular-brands-item">
+                <p><a class="popular-brands-main" href="popular-brands.html">
+                   <img src="#" alt="Популярный производитель">
+                   </a>
+                </p>
+              </li>
+              <li class="popular-brands-item">
+                <p><a class="popular-brands-main" href="popular-brands.html">
+                    <img src="#" alt="Популярный производитель">
+                   </a>
+                </p>
+              </li>
+               <li class="popular-brands-item">
+                 <p><a class="popular-brands-main" href="popular-brands.html">
+                     <img src="#" alt="Популярный производитель">
+                    </a>
+                 </p>
+               </li>
+               <li class="popular-brands-item">
+                  <p><a class="popular-brands-main" href="popular-brands.html">
+                     <img src="#" alt="Популярный производитель">
+                    </a>
+                  </p>
+                </li>
+               <li class="popular-brands-item">
+                   <p><a class="popular-brands-main" href="popular-brands.html">
+                       <img src="#" alt="Популярный производитель">
+                      </a>
+                   </p>
+                </li>
+               <li class="popular-brands-item">
+                   <p><a class="popular-brands-main" href="popular-brands.html">
+                       <img src="#" alt="Популярный производитель">
+                      </a>
+                   </p>
+                </li>
+               <li class="popular-brands-item">
+                   <p><a class="popular-brands-main" href="popular-brands.html">
+                       <img src="#" alt="Популярный производитель">
+                      </a>
+                   </p>
+                </li>
+                <li class="popular-brands-item">
+                   <p><a class="popular-brands-main" href="popular-brands.html">
+                       <img src="#" alt="Популярный производитель">
+                     </a>
+                   </p>
+                </li>
+              </ul>
+        </section>
+  <!--Сервисы-->
+        <section class="services">
+          <h2>Сервисы</h2>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <ul class="service-list">
+            <li class="service-item">
+              <span><a class="delivery" href="#">Доставка</a></span>
+            </li>
+            <li class="service-item">
+              <span><a class="warranty" href="#">Гарантия</a></span>
+            </li>
+            <li class="service-item">
+              <span><a class="loan" href="#">Кредит</a></span>
+            </li>
+          </ul>
+        </section>
+  <!--О компании-->
+        <section class="aboutus">
+          <h2>Компания"Техномарт"</h2>
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+          <ul class="delivery-company-list">
+            <li class="delivery-company-item">
+              <p>Деловые линии</p>
+            </li>
+           <li class="delivery-company-item">
+              <p>Автотрейдинг</p>
+            </li>
+           <li class="delivery-company-item">
+              <p>ЖелДорЭкспедиция</p>
+            </li>
+          </ul>
+          <p><a class="about-us" href="info.html">Подробнее о компании</a></p>
+        </section>
+        <section class="contact">
+          <h2>Контакты</h2>
+          <p>
+            Вы можете забрать товар сами, заехав в наш офис:
+          </p>
+          <a class="map-main"<img src="#" width="100" height="100" alt="улица Большая Конюшенная дом 19"></a>
+       <!--Здесь будет форма обращения-->
+        </section>
+      </main>
     <footer class="main-footer">
   <!--Логотип-->
       <a class="down-header-logo">
-      <img src="img/index-logo.svg" width="100" height="100" alt="Логотип Техномарт">
+        <img src="img/index-logo.svg" width="100" height="100" alt="Логотип Техномарт">
       </a>
   <!--Навигация подвал-->
     <ul class="down-site-navigation">
@@ -64,41 +200,44 @@
       <li><a href="news.html">Новости</a></li>
       <li><a href="sale.html">Спецпредложения</a></li>
      </ul>
+    <!--Разработано-->
       <p class="footer-develop">
          © 2010-2019 Компания "Техномарт"<br> Все права защищены
       </p>
+    <!--Адрес и телефон-->
       <p class="footer-address">
-         г.Санкт-Петербург, ул. Б.Конюшенная д.19/8 <br> +7 (812) 555-05-55
+         г.Санкт-Петербург, ул. Б.Конюшенная д.19/8
       </p>
-     <div class="footer-social">
-      <ul>
+      <p class="footer-phone">
+        <a href="tel:>+78125550555">+7 (812) 555-05-55</a>
+      </p>
+    <!--Соц.сети-->
+      <ul class="social-link">
         <li><a class="social-button" href="#">Вконтакте</a></li>
         <li><a class="social-button" href="#">Фейсбук</a></li>
         <li><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
-     </div>
+    <!--Обратная связь-->
        <p class="footer-copyright">
-        <b>Разработано-</b>
+        <p>Разработано - </p>
         <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
        </p>
        <p class="footer-feedback">
-        <b>Обратная связь:</b>
-        <b>mail@htmlacademy.ru</b>
+        <p>Обратная связь:</p>
+        <p><a href="mailto:mail@htmlacademy.ru">mailto:mail@htmlacademy.ru</a></p>
        </p>
     </footer>
-  <!--Форма Личный кабинет-->
-       <section clas="modal modal-login">
-         <h2>Войти</h2>
-         <p>Введите свой логин и пароль.</p>
+  <!--Форма Обращение-->
+       <section class="modal modal-write-us">
+         <h2 class="visually-hidden">Заблудились?Напишите нам!</h2>
          <!--Здесь будет форма-->
          <span class="modal-close">x</span>
        </section>
-  <!--Регистрация-->
-       <section class="modal mpdal-registration">
-         <h2>Регистрация</h2>
-         <p>Введите свой логин и пароль.</p>
+  <!--Карта-->
+       <section class="modal modal-map">
+         <h2 class="visually-hidden">Карта</h2>
          <!--Здесь будет форма-->
          <span class="modal-close">x</span>
        </section>
-  </body>
-</html>
+    </body>
+  </html>
