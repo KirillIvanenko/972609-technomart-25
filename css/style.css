@@ -1,59 +1,127 @@
 body {
   margin: 0;
+  padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
-  line-haight: 24px;
-  color: #ffffff;
+  line-haight: 16px;
+  width: 100%;
 
-  background-color: #dcdcdc;
+ background-color: #ffffff; /*основной фон главной страницы*/
  }
-
 a {
-  text-decoration: none;
+  text-decoration: none; /*удаление подчеркивания у ссылок*/
   }
-.top-menu {
+.visually-hidden {       /*сделать невидимыми ненужные заголовки*/
+  visibility: hidden;
+  position: absolute;
+}
+.botton {               /*оформление кнопок*/
+  text-align: center;
+  font-family: Cuprum;
+  font-size: 14px;
+  line-haight: 18px;
+  vertical-align: middle;
+  text-transform: uppercase;
   color: #ffffff;
-  background-color: #dcdcdc;
+
+  background-color: #000000;
+  border: none;
+}
+.first-background {     /*фон верхней полосы меню*/
+  background-color: #293449;
+}
+.main-navigation {      /*фон нижней полосы меню*/
+  background-color: #32425c;
+  box-shadow: 0 5px 0 #293449;
 }
 .user-navigation,
 .main-navigation,
-.top-site-navigation
+.top-site-navigation,
+.first-line-menu
  {
   list-style: none;
  }
-.user-navigation a
+.user-navigation a  /*форматирование текста верхнего меню*/
 {
   font-family: Cuprum;
-  font-size: 21px;
-  line-haight: 21px;
+  font-size: 14px;
+  line-haight: 17px;
   color: #000000;
  }
-.main-navigation a
+ .top-menu {
+   display: flex;
+   height: 42px;
+   background: #293449;
+   width: 100%;
+}
+.top-header-logo {
+   width: 109px;
+   height: 19px;
+   padding-left: 130px;
+   padding-top: 10px;
+   background: ee3643;
+   background-image: url('img/logo-technomart.png');
+ }
+ .search-box,
+ .bookmarks-top,
+ .basket-top,
+ .order-top {
+   padding-top: 10px;
+}
+.container {
+   display: flex;
+   justify-content: space-between;
+   width: 940px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+.order-top  {  /*фон для меня Заказ*/
+  padding-right: 130px;
+  background-color: #63a63e;
+  background-size: 20px 20px;
+}
+.order-top hover { /*изменение фона при наведении курсора меню Заказ*/
+  background-color: #5fbb2d;
+}
+.main-navigation a  /*форматирование текста основного иеню*/
 {
   font-family: Cuprum;
   font-size: 17px;
   line-haight: 17px;
   color: #ffffff;
  }
-.top-menu a {
+.top-menu a {   /*форматирование текста верхнего меню*/
   font-family: Cuprum;
   font-size: 17px;
   line-haight: 18px;
   color: #ffffff;
  }
-p .top-phone {
+p .top-phone {  /*форматирование тел.в шапке*/
   font-family: Cuprum;
   font-size: 21px;
   line-haight: 21px;
+  padding: 5px;
   color: #ee3643;
+  border: 2px solid #ffffff;
 }
-.top-adress {
+.top-adress {  /*форматирование адреса в шапке*/
   font-family: Cuprum;
   font-size: 14px;
   line-haight: 21px;
   color: #32425c;
 }
+.slogan {      /*форматирование заголовка в шапке*/
+  font-family: Cuprum;
+  font-size: 14px;
+  line-haight: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+.user-navigation a { /*меню вход и регистрация*/
+  color: #000000;
+  background-color: #ffffff;
+}                    /*смена фона при наведении главного меню*/
 .user-navigation a:hover,
 .user-navigation a:focus,
 .main-navigation a:hover,
@@ -84,10 +152,283 @@ p .top-phone {
   line-haight: 30px;
   color: #32425c;
 }
+.popular-goods h2,
+.popular-brands h2 {
+  background-color: #f9f5f0;
+}
+.top-header-logo {
+  width: 109px;
+  height: 19px;
+}
+.materials {
+  display: inline-block;
+  width: 300px;
+  height: 123px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #ffbf47;
+}
+.tools {
+  display: inline-block;
+  width: 300px;
+  height: 123px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #3bbce3;
+}
+.equipment {
+  display: inline-block;
+  width: 300px;
+  height: 123px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #dc91d8;
+}
+.sale {
+  display: inline-block;
+  width: 300px;
+  height: 123px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #8ed78f;
+}
+.delivery {
+  display: inline-block;
+  width: 300px;
+  height: 123px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #ffc047;
+}
+.popular-goods-list{ /*Начало описания карточки товара*/
+  width: 1200px;
+  margin: 20px auto;
+}
+.popular-goods-item {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  line-height: 15px;
+  font-weight: bold;
+  text-align: center;
+
+  border: 1px solid #ccc;
+}
+.popular-goods-item:nth-child(4n) {
+  margin-right: 0;
+}
+.popular-goods-list {
+  font-size: 0;
+}
+.popular-goods-item {
+  font-size: 16px;
+}
+.popular-goods-list {
+  margin-left: -30px;
+}
+.popular-goods-item .new-flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 60px;
+  height: 60px;
+
+  text-indent: -1000px;
+  owerflow: hidden;
+  z-index: 20;
+}
+.popular-goods-item .new-flag {
+  background: url("img/new-flag.png") no-repeat 0 0;
+}
+.popular-goods-item .action {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+.popular-goods-item .action .buy,
+.popular-goods-item .action .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius: 3px;
+
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.popular-goods-item .action .bookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+.popular-goods-item .action {
+  display: none;
+}
+.popular-goods-item:hover .action {
+  display: block;
+}
+.popular-goods-item image {
+  width: 218px;
+  height: 168px;
+}
+.popular-goods-item .image img {
+  max-width: 100%;
+}
+.popular-goods-item .popular-name {
+  min-height: 40px;
+  padding: 0px 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.popular-goods-item .popular-old-price{
+  min-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  color: #999;
+  text-decoration: line-through;
+}
+.popular-goods-item .popular-new-price {
+  position: relative;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 12px 30px;
+
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
+}
+.popular-goods-item .popular-new-price:after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: -20px;
+
+  width: 0;
+  height: 0;
+
+  border: 20px solid white;
+  border-left-color: #ee3643;
+} /* Конец описания карточки товара*/
+.popular-brands-list { /*Начало описания карточки фирм*/
+  width: 1200px;
+  margin: 10px auto;
+}
+.popular-brands-item {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  height: 145px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  border: 1px solid #ccc;
+}
+.popular-brands-main-1 img {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50% );
+}
+.popular-brands-main-2 img {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50% );
+}
+.popular-brands-main-3 img {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50% );
+}
+.popular-brands-main-4 img {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50% );
+}
+.popular-brands-main-5 img {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50% );
+}
+.popular-brands-main-6 img {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50% );
+}
+.popular-brands-main-7 img {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50% );
+}
+.popular-brands-main-8 img {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50% );
+}
+.popular-goods-item:nth-child(4n) {
+  margin-right: 0;
+}
+.popular-brands-list {
+  font-size: 0;
+}
+.popular-brands-item {
+  font-size: 16px;
+}
+.popular-brands-item .row {
+  margin-left: -20px;
+}
 .popular-goods-list,
 .popular-brands-item,
 .service-list,
-.aboutus
+.aboutus,
+.action
 {
  list-style: none;
 }
@@ -110,3 +451,12 @@ color: #ffffff;
   line-haight: 20px;
   color: #000000;
 }
+.popular-goods .all-popular-goods,
+.popular-brands .all-popular-brands {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-haight: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+  padding: 10px;
+  }
